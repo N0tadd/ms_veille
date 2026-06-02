@@ -1,5 +1,6 @@
 """
-Veille marches-securises.fr — Notifications Discord
+Veille marches-securises — Notifications Discord
+By N0tad
 """
 
 import requests
@@ -20,10 +21,10 @@ FICHIER_VUS      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ms_
 URL = (
     "https://www.marches-securises.fr/entreprise/"
     "?module=liste_consultations"
-    "&presta=%3Btravaux%3Bautres"
-    "&r=cloison%2C+plafond%2C+doublage%2C+isolation%2C+menuiserie"
-    "&date_cloture_type=0"
-    "&liste_dept=44%3B49%3B85%3B79%3B56%3B35%3B53%3B86%3B37%3B72"
+    "&presta=%3Btravaux%3Bautres" # A personnaliser
+    "&r=cloison%2C+plafond%2C+doublage%2C+isolation%2C+menuiserie" # A personnaliser
+    "&date_cloture_type=0" # A personnaliser
+    "&liste_dept=44%3B49%3B85%3B79%3B56%3B35%3B53%3B86%3B37%3B72" # A personnaliser
 )
 
 HEADERS = {
@@ -163,7 +164,7 @@ def verifier():
 # ─── LANCEMENT ────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    print("🚀 Veille marches-securises.fr démarrée — vérification toutes les 15 minutes")
+    print("Veille marches-securises.fr démarrée — vérification toutes les 15 minutes")
     print(f"   Webhook : {DISCORD_WEBHOOK[:50]}...")
     print()
 
