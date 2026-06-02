@@ -1,2 +1,2 @@
 # ms_veille
-scraper python pour marches-securises.fr (utilise les requêtes HTTP) Tourne 24h/24 sans erreur
+scraper python pour marches-securises.fr (utilise HTTP requests) Tourne 24h/24 sans erreur
