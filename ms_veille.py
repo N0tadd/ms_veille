@@ -15,7 +15,7 @@ import time
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 
 LOG_FILE         = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ms_log.txt")
-DISCORD_WEBHOOK  = "https://discord.com/api/webhooks/1496848388006875246/BqTBCA7nBDJPXh59Lq6gjvn_H057YoKkJl22M_hp1KmcTgbiwvfipKdGPFIqcARVeY2p"   # ← à remplir
+DISCORD_WEBHOOK  = ""   # ← à remplir
 FICHIER_VUS      = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ms_vus.json")
 
 URL = (
